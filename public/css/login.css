@@ -1,0 +1,87 @@
+/* Login page's styles */
+#password {
+    position: relative;
+}
+.reset_link {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 10px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: .4s;
+}
+.reset_link:hover {
+    color: black;
+    transition: .4s;
+}
+
+/* Register page's styles */
+.reg_wrapper .container .form-group.row,.reg_btn {
+    margin-bottom: 35px;
+}
+.reg_header,.log_header,.email_header {
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    word-spacing: 10px;
+    margin-bottom: 55px;    
+}
+.reg_input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #9d9da1;
+    padding-bottom: 15px;
+}
+.reg_input:focus {
+    border-bottom: 1px solid black;
+    color:black;
+    outline: none;
+    box-shadow: none;
+    transition: .4s; 
+    background: transparent;
+}
+.reg_input::-webkit-input-placeholder {
+    font-style: italic;
+}
+.reg_btn {
+    width: 100%;
+     margin-top: 15px;
+     background: transparent;
+     border: 1px solid black;
+     color: black;
+     font-size: 12px;
+     letter-spacing: 2px;
+     padding: 10px 0px;
+     text-transform: uppercase;
+     transition: .4s;
+    }
+    .reg_btn:hover {
+        background: black;
+        color: white;
+        transition: .4s;
+        border: 1px solid black;
+    }
+.log_sub {
+    margin-top: 35px;
+}
+ .have_account span {
+     margin-right: 10px;
+     letter-spacing: 1px;
+ }
+ .have_account a {
+     font-weight: 600;
+     text-decoration: underline;
+     letter-spacing: 2px;
+     font-size: 13px;
+     margin-left: 10px;
+     transition: .4s;
+     text-transform: capitalize;
+ }
+ .have_account a:hover {
+     transition: .4s;
+ }

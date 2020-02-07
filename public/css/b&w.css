@@ -1,0 +1,83 @@
+.cart-table .table thead tr th {
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.cart-table .table tr .pro-thumbnail, .cart-table .table tr .pro-price, 
+.cart-table .table tr .pro-quantity, .cart-table .table tr .pro-subtotal, 
+.cart-table .table tr .pro-remove {
+    width: 140px;
+} 
+.cart-table .table tbody tr td {
+    border-top: none !important;
+    text-align: center;
+    padding: 10px 20px;
+    vertical-align: middle;
+    font-weight: 500;
+    color: #111;
+    font-family: "Poppins";
+    letter-spacing: 1px;
+}
+.cart-table .table tbody tr td a {
+    color: #111;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: "FreightWeb,Times,Times New Roman,serif";
+    letter-spacing: 1px;
+}
+.total td:first-child {
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.cart-ind-price,.cart-sub-price {
+    font-family: 'sofia';
+}
+.cart-ind-price::before,.cart-sub-price::before {
+    content: "\20BD";
+    padding-right: 5px;
+}
+.cart-prod-input {
+    background:transparent;
+    border: 1px solid black;
+    color:black;
+}
+.cart-prod-input:focus {
+    background: transparent;
+    border: 1px solid black;
+    box-shadow: none;
+}
+.cart_total {
+    float: right;
+    font-family: 'sofia';
+    font-weight: 600;
+    font-size: 18px;
+}
+.cart_total::before {
+    content: "\20BD";
+    padding-right: 5px;
+}
+.to-checkout {
+    border: 1px solid black;
+    background: transparent;
+    color:black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: .4s;    
+}
+.to-checkout:hover {
+    color:white;
+    background: black;
+    transition: .4s;
+}
+.wish-table .pro-price::before {
+    content: "\20BD";
+    padding-right: 5px;
+}

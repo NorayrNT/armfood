@@ -1,0 +1,280 @@
+.main_cat h4,.filter_head h4 {
+    text-transform: capitalize;
+    font-family: 'Nunito';
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+.shop_wrapper .col-sm-3 {
+    padding-left: 0px;
+}
+.down {
+    float: right;
+    vertical-align: top;
+}
+.parent_ul  li {
+    padding-left: 5px;
+    margin-bottom: 10px;
+    transition: .4s;
+    cursor: pointer; 
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* .parent_ul li:hover {
+    color: #9d9da1;
+    transition: .4s;
+} */
+.parent_ul li a {
+    color: inherit;
+    transition: .4s;
+}
+/* .parent_ul li a:hover {
+    color: #9d9da1;
+    transition: .4s;
+} */
+.child_ul {
+    display: none;
+}
+.main_cat_name {
+    margin-bottom: 10px !important;
+}
+.filter_head {
+    margin-bottom: 25px;
+}
+
+.cat_filter {
+    margin: 80px 0px;
+}
+.range_first_price,.range_second_price {
+    width:75px;
+    background:none;
+    font-family: 'sofia';
+    border:none;
+    font-weight: 600;
+    text-align: center;
+}
+.range_first_price::before,.range_second_price::before {
+    content: "\20BD";
+    padding-right: 5px;
+}
+.filter_price_name {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.form_content {
+    margin-top: 30px;
+}
+.filter_btn {
+    float: right;
+    border: 1px solid transparent;
+    color:white;
+    background: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding:2px 10px ;
+    font-size: 12px;
+    transition: .4s;
+}
+.filter_btn:hover {
+    color: black;
+    background: transparent;
+    transition: .4s;
+    cursor: pointer
+}
+.mini_filter_btn {
+    display: none;
+}
+.mini_filter_btn button {
+    border: 1px solid transparent;
+    color: white;
+    background: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    font-size: 12px;
+    transition: .4s;
+    width: 100%;
+    margin-top: 15px;
+}
+.mini_filter_btn button:hover {
+    color: black;
+    background: transparent;
+    transition: .4s;
+    cursor: pointer
+}
+.left_ad_banner {
+    margin-top: 25px;
+}
+.shop_banner {
+    margin-bottom: 50px;
+}
+.img_banner:hover {
+    cursor: pointer;
+}
+.img_banner img {
+    width: 250px;
+    height: 340px;
+}
+.shop_wrapper .col-sm-9 .img_div img {
+    width: 100%;
+}
+.shop_wrapper .col-lg-4 .icons_div {
+    left: 50%;
+    margin-left: -40px;
+}
+.shop_wrapper .col-lg-4 {
+    margin-bottom: 25px;
+}
+.shop_pagination {
+    margin: 35px 0px;
+    display: flex;
+    justify-content: center;    
+}
+.page-item.active .page-link {
+    background-color: black;
+    color:white;
+    transition: .4s;
+    border-color: transparent;
+}
+.page-link {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+.page-link:hover {
+   color: black;
+   border: 1px solid black; 
+   background-color: #a6a6a6;
+   transition: .4s;
+}
+.page-link:focus {
+    box-shadow: none;
+}
+/* Product page styles */
+.prod_img img {
+    width: 600px;
+    height: 400px;
+    max-width: 600px;
+    max-height: 400px;
+    object-fit: cover;
+}
+.prod_name {
+    display: flex;
+    justify-content: space-between;
+}
+.prod_name h3 {
+    width: 60%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.prod_price {
+    width: 20%;
+    font-weight: 600;
+    font-family: 'sofia';
+    font-size: 22px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4);
+}
+.prod_price::before {
+    content: '\20BD';
+    padding-right: 10px;
+    font-size:22px;
+}
+#tab1,#tab2,#tab3 {
+    width: 80px;
+    display: inline-block;
+    font-size: 10px;
+}
+.prod_tabs {
+    margin-top: 50px;
+}
+.prod_tabs div {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    transition: .4s;
+    color: #9d9da1;
+}
+.prod_tabs div:hover {
+    cursor: pointer;
+    color: black;
+    transition: .4s;
+}
+.prod_tabs div:first-child {
+    margin-left: 0px;
+    color:black;
+}
+.prod_active {
+    display: block;
+}
+.tab_contents {
+    margin-top: 35px;
+}
+.tab_contents div {
+    display: none;
+}
+.tab_contents div:first-child {
+    display: block;
+}
+.add_bag {
+    margin-top: 50px;
+}
+.bag_btn {
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    background: transparent; 
+    transition: .4s;
+}
+.bag_btn:hover {
+    color: white;
+    background: black;
+    cursor: pointer;
+    transition: .4s;
+}
+.ad_block {
+    margin-top: 110px;
+}
+.banner_block img {
+    width: 100%;
+    height: 200px;
+}
+.related_header {
+    margin: 150px 0 50px 0;
+    text-align: center;
+}
+.related_header h3 {
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 2px;    
+}
+.related_header h3::after {
+    background: rgba(0, 0, 0, 0) url(../images/icons/title-icon.png) no-repeat scroll center center;
+    content: "";
+    display: block;
+    height: 18px;
+    margin: 10px auto 0;
+    max-width: 100%;
+    width: 364px;    
+}
+
+
+/* Account page's styles */
+.acc_tab_contents > div {
+    display: none;
+}
+.acc_tab_contents > div:first-child {
+    display: block;
+}
+.active_tab {
+    color: #9d9da1;
+}

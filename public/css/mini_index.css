@@ -1,0 +1,140 @@
+@media only screen and (max-width: 576px) {
+    .m_footer,.parent_div {
+        display: block;        
+    }
+    .footer_inner {
+        display: none;
+    }
+    .shop_wrapper {
+        padding: 0px 10px;
+    }
+    .main_cat {
+        display: none;
+    }
+    .shop_wrapper .parent_ul {
+        display: none;
+        padding: 0px 10px;
+    }
+    .shop_wrapper .col-sm-9 .img_div img {
+        height: 150px;
+    }
+    .m_cat_list {
+        display: block;
+    }
+    .details_wrapper {
+        margin-top: 25px;
+    }
+    .details_wrapper .col-12:first-child {
+        padding:0px;
+    }
+    .prod_img {
+        padding:0 5px;
+    }
+    .prod_img img {
+        width: 100%;
+    }
+    .prod_name_block {
+        margin-top: 10px;
+    }
+    .prod_name {
+        display: initial;
+    }
+    .prod_name h3,.prod_price {
+        font-size: 16px;
+        width: 100%;
+    }
+    .prod_price:before {
+        font-size: 18px;
+    }
+    .shop_wrapper .col-sm-3 {
+        padding-left: 15px;
+    }
+}
+@media only screen and (min-width: 577px) {
+    .m_footer {
+        display: none;
+    }
+    .shop_wrapper {
+        display: block;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .left_ad_banner {
+        display: none;
+    }
+    .img_div img {
+        height: auto;
+    }
+}
+@media only screen and (min-width : 577px) and (max-width : 992px) {
+    .shop_wrapper {
+        margin-top : 80px;
+    }   
+    .range_first_price,.range_second_price {
+        width: 65px;
+    }
+    .filter_btn {
+        display: none;
+    }
+    .mini_filter_btn {
+        display: block;
+    }
+    .shop_wrapper .col-lg-4 a img {
+        height: 200px;
+    }
+    .main_cat_name {
+        font-size: 10px;
+    }
+    .filter_head h4 {
+        font-size:14px; 
+    }
+    .details_wrapper {
+        margin-top: 35px;
+    }
+    .prod_name_block {
+        margin-top: 25px;
+    }
+    .name_div h3 {
+        padding-right: 5px;
+        font-size: 10px;
+    }
+
+
+} 
+@media only screen and (max-width: 992px) {
+    .m_top_nav {
+        display: block;        
+    }
+    .top_nav_wrapper {
+        display: none;
+    }
+    .right_div,.left_div  {
+        display: none;
+    }
+    .cat_intro {
+        margin-top: 45px;
+    }
+    .cat_intro > * {
+        font-size: 18px;
+    }
+    .value_text {
+        padding: 20px;
+    }
+    .value_text h4 {
+        font-size: 15px;
+        max-width: 100%;
+        letter-spacing: 1px;
+        line-height: 2;
+    }
+    .left_ad_banner {
+        display: none;
+    }
+}
+@media only screen and (min-width:993px) {
+    .m_top_nav {
+        display: none;        
+    }
+    .top_nav_wrapper {
+        display: block;
+    }
+}
