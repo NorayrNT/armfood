@@ -48,7 +48,7 @@
                                 </thead>
                                 <tbody>
                                     @if(!is_null($orders))
-                                    @foreach($orders as $item)
+                                        @foreach($orders as $item)
                                             <tr>
                                                 <td>{{ $item->id }}</td>
                                                 <td>{{ $item->created_at}}</td>
@@ -56,13 +56,11 @@
                                                 <td><button class='order_tbl_btn'>детали</button></td>   
                                             </tr>
                                         @endforeach
-                                    @endif                                                                
                                 </tbody>
                             </table>
-                            <div class="table-links">
-                                @if(!is_null($orders))
-                                    {{ $orders->links() }}
-                                @endif
+                            <div class="table-links">                                
+                                {{ $orders->links() }}
+                            @endif                                                                
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,11 @@
+1. The Client connects to the merchant to create an order.
+2. Once the order is confirmed by the client, merchant’s system registers it in the payment gateway.
+3. In response to registration request the payment gateway sends the unique ID of the order.
+4. Merchant’s system redirects to the payment form.
+5. The Client fills in the received form and sends the data to the processing center server.
+6. Processing center system checks whether the card is registered in 3DSecure (SecureCode) and redirects the client to ACS (Access Control Server).
+7. Once the form in ACS is completed and the payment is made client’s browser redirects to back URL (specified when registering the order by the merchant).
+8. Client’s browser sends a “payment results page” request to the merchant.
+9. Based on order number Merchant’s system sends an “order payment status” request to the payment gate.
+10. Payment gate returns the payment status and other payment data.
+11. Merchants system displays payment results page in the client’s browser.

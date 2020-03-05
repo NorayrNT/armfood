@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Builder;
 use App;
 use Auth;
 
@@ -17,7 +18,7 @@ class AccountController extends Controller
         $orders = '';
         $user = '';
         if(Auth::check()) {
-            $user = App\User::find(Auth::check());
+            $user = App\User::find(Auth::id());
             $orders = $user->orders()->paginate(5);
         }
         return view('account')->with(compact('user','orders'));    
@@ -26,11 +27,10 @@ class AccountController extends Controller
     public function changeName(Request $request) {
         if($request) {
             if(Auth::check()) {
-                $user = App\User::find(Auth::id());
                 $request->validate([
                     'name' => 'string|max:255|min:3',
                 ]);
-                $user->update([
+                App\User::find(Auth::id())->update([
                     'name' => $request->name,
                     'email' => $request->email,
                 ]);
@@ -59,7 +59,6 @@ class AccountController extends Controller
                 session(['result' => 'что-то пошло не так, попробуйте снова.']);
                 return redirect()->back();
             }
-            dd($request->all());
         }
     }
 }
